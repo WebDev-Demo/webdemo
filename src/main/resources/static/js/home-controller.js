@@ -10,6 +10,12 @@ cs480App.controller('UserCtrl', function ($scope, $http) {
 	  		$scope.users = data;
 	  	});
   }
+  $scope.submit = function() {
+	  $http.post("/beophi?search=" + $scope.search)
+	  	.success(function(data){
+	  		// $scope.users = data;
+	  	});
+  }
 
   // $scope.getUser = function() {
 	 //  $http.get("cs480/user/" + $scope.userIdToSearch)

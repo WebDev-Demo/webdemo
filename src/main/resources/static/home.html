@@ -1,0 +1,26 @@
+
+<html ng-app="cs480App">
+	<!-- This page uses AngularJS -->
+	<head>
+	    <title>MyWebsite Demo HomePage using AngularJS</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+	    <script src="/js/home-control-ajs.js"></script>
+	    <link rel="stylesheet" href="/css/home-style.css">
+	</head>
+
+	<body ng-controller="UserCtrl">
+		<div class="topnav">
+		  <a class="active" href="#home">Home</a>
+		  <a href="#about">About</a>
+		  <a href="#contact">Contact</a>
+		  <div class="search-container">
+		    <form ng-submit="submit()">
+		      <input type="text" placeholder="Search.." name="search">
+		      <button type="submit">Submit</button>
+		    </form>
+		  </div>
+		</div>
+
+	</body>
+
+</html>

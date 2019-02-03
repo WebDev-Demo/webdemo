@@ -17,8 +17,9 @@ public class WebController {
 		return "beo phi";
 	}
 	
-	@RequestMapping(value = "/beophi", method = RequestMethod.GET)
-	String beophi2() {
+	@RequestMapping(value = "/beophi/{search}", method = RequestMethod.POST)
+	String beophi2(@PathVariable("search") String searchItem) {
+		System.out.println(searchItem);
 		return "krjshgfvkzjrdgfvuzhsrkuvzgdrsjuvrhz";
 	}
 	
