@@ -11,7 +11,7 @@ cs480App.controller('UserCtrl', function ($scope, $http) {
 	  	});
   }
   $scope.submit = function() {
-	  $http.post("/beophi?search=" + $scope.search)
+	  $http.post("/beophi/" + $scope.search)
 	  	.success(function(data){
 	  		// $scope.users = data;
 	  	});

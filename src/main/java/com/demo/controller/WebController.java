@@ -8,8 +8,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.demo.data.provider.SearchObjectProvider;
+
 @RestController
 public class WebController {
+	@Autowired
+	private SearchObjectProvider soop;
+	
 	
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
@@ -19,7 +24,6 @@ public class WebController {
 	
 	@RequestMapping(value = "/beophi/{search}", method = RequestMethod.POST)
 	String beophi2(@PathVariable("search") String searchItem) {
-		System.out.println(searchItem);
 		return "krjshgfvkzjrdgfvuzhsrkuvzgdrsjuvrhz";
 	}
 	
